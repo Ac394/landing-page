@@ -26,6 +26,7 @@ ul {
 .secondary,
 .title-one,
 .first-button,
+.second-button,
 .title-two,
 .image-text,
 .quote,
@@ -107,11 +108,17 @@ main {
 
 .image-text {
   color: #686d74;
-  margin: 5px;
+  margin: 5px 0px;
+  width: 180px;
+  text-align: center;
 }
 
 .quote-figure {
   background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 480px;
 }
 
 .quote {
@@ -119,13 +126,22 @@ main {
   font-size: 36px;
   font-weight: lighter;
   font-style: italic;
-  margin: 5px;
+  margin: 5px auto;
+  width: 43%;
+  max-width: 1170px;
+  text-align: justify;
 }
 
 .author {
   color: #1f2937;
   font-size: 18px;
   font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  width: 43%;
+  max-width: 1170px;
 }
 
 .title-three {
@@ -135,22 +151,39 @@ main {
 
 .second-button {
   color: #f9faf8;
-  border: 1px solid #f9faf8;
-  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #f9faf8;
+  border-radius: 8px;
   background-color: #3882f6;
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.section-three {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1170px;
 }
 
 .blue-bg {
   background-color: #3882f6;
-  margin: 30px 90px;
-  padding: 30px;
-  border-radius: 4px;
+  margin: 120px auto;
+  padding: 45px 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer {
   background-color: #1f2937;
   color: #e5e7eb;
   font-size: 18px;
+  text-align: center;
+  padding: 2em;
 }
 
 .header-wrapper {
@@ -183,9 +216,18 @@ footer {
   margin-right: auto;
   width: 90%;
   max-width: 1170px;
+  padding-bottom: 80px;
 }
 
 .grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 1170px;
+}
+
+.left-column-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
